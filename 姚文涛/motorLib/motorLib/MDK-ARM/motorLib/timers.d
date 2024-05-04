@@ -1,0 +1,15 @@
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
+motorlib\timers.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdlib.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+motorlib\timers.o: D:\program_files\ARM\ARMCC\Bin\..\include\stddef.h
+motorlib\timers.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdint.h
+motorlib\timers.o: ../Core/Inc/FreeRTOSConfig.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+motorlib\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h

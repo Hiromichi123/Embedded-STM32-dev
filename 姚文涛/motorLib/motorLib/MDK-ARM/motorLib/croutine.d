@@ -1,0 +1,14 @@
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+motorlib\croutine.o: D:\program_files\ARM\ARMCC\Bin\..\include\stddef.h
+motorlib\croutine.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdint.h
+motorlib\croutine.o: ../Core/Inc/FreeRTOSConfig.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h
+motorlib\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

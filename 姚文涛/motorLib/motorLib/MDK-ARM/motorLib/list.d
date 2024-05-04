@@ -1,0 +1,12 @@
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+motorlib\list.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdlib.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+motorlib\list.o: D:\program_files\ARM\ARMCC\Bin\..\include\stddef.h
+motorlib\list.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdint.h
+motorlib\list.o: ../Core/Inc/FreeRTOSConfig.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+motorlib\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

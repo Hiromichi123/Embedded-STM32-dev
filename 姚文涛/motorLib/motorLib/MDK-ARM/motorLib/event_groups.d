@@ -1,0 +1,15 @@
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+motorlib\event_groups.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdlib.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+motorlib\event_groups.o: D:\program_files\ARM\ARMCC\Bin\..\include\stddef.h
+motorlib\event_groups.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdint.h
+motorlib\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+motorlib\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h

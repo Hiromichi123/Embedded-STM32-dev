@@ -1,0 +1,14 @@
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+motorlib\stream_buffer.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdint.h
+motorlib\stream_buffer.o: D:\program_files\ARM\ARMCC\Bin\..\include\string.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+motorlib\stream_buffer.o: D:\program_files\ARM\ARMCC\Bin\..\include\stddef.h
+motorlib\stream_buffer.o: ../Core/Inc/FreeRTOSConfig.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+motorlib\stream_buffer.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h

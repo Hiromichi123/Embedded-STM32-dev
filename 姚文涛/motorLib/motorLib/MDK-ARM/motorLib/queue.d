@@ -1,0 +1,15 @@
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
+motorlib\queue.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdlib.h
+motorlib\queue.o: D:\program_files\ARM\ARMCC\Bin\..\include\string.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+motorlib\queue.o: D:\program_files\ARM\ARMCC\Bin\..\include\stddef.h
+motorlib\queue.o: D:\program_files\ARM\ARMCC\Bin\..\include\stdint.h
+motorlib\queue.o: ../Core/Inc/FreeRTOSConfig.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+motorlib\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
