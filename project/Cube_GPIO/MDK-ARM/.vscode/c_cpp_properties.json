@@ -3,16 +3,16 @@
         {
             "name": "Cube_GPIO",
             "includePath": [
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Core\\Inc",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Inc",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Drivers\\CMSIS\\Include",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Core\\Inc",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Inc",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\CMSIS\\Include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\MDK-ARM",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Core\\Src",
-                "c:\\Users\\Hiro\\Desktop\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Src"
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\MDK-ARM",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Core\\Src",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
