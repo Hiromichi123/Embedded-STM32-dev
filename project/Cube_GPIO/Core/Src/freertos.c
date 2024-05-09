@@ -52,16 +52,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
-/* USER CODE END Variables */
-/* Definitions for defaultTask */
-osThreadId_t startTaskHandle;
-const osThreadAttr_t startTask_attributes = {
-  .name = "startTask",
-  .stack_size = START_TASK_STACK_SIZE * 4,
-  .priority = (osPriority_t) START_TASK_PRIO,
-};
-
 osThreadId_t task1Handle;
 const osThreadAttr_t task1_attributes = {
   .name = "task1",
@@ -82,13 +72,72 @@ const osThreadAttr_t task3_attributes = {
   .stack_size = TASK3_STACK_SIZE * 4,
   .priority = (osPriority_t) TASK3_PRIO,
 };
+/* USER CODE END Variables */
+/* Definitions for defaultTask */
+osThreadId_t defaultTaskHandle;
+const osThreadAttr_t defaultTask_attributes = {
+  .name = "defaultTask",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-// 任务1, 2, 3 的定义
-void task1(void *pvParameters);
-void task2(void *pvParameters);
-void task3(void *pvParameters);
+// 任务1, 2, 3 的定�??
+// 线程�??，PA0点灯500ms
+void task1(void* pvParameters)
+{
+  while(1)
+  {
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0);
+    vTaskDelay(200);
+  }
+}
+
+// 线程二，PA1点灯200ms
+void task2(void* pvParameters)
+{
+  while(1)
+  {
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
+    vTaskDelay(200);
+  }
+}
+
+// 线程三，如果PA2被按下，删除task1
+void task3(void* pvParameters)
+{
+  uint32_t button_state = 0;
+  uint32_t last_button_state = 0;
+  uint32_t last_debounce_time = 0;
+  const uint32_t debounce_delay = 50; // 消抖延迟，单位为毫秒
+
+  while(1)
+  {
+    button_state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2);
+
+    // 如果读取的按键状态与上一次的状�?�不同，重置消抖计时�??
+    if (button_state != last_button_state)
+    {
+      last_debounce_time = xTaskGetTickCount();
+    }
+
+    // 如果消抖计时器超过设定的延迟，认为按键状态已稳定
+    if ((xTaskGetTickCount() - last_debounce_time) > debounce_delay)
+    {
+      // 如果按键被按下，并且task1还存在，删除task1
+      if(button_state == GPIO_PIN_SET && task1Handle != NULL)
+      {
+        vTaskDelete(task1Handle);
+        task1Handle = NULL;
+      }
+    }
+
+    last_button_state = button_state;
+
+    vTaskDelay(10);
+  }
+}
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
@@ -102,40 +151,7 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-  //线程一,LED 500ms
-  void task1(void* pvParameters)
-  {
-    while(1)
-    {
-      LED0_TOGGLE();
-      vTaskDelay(500);
-    }
-  }
 
-  //线程二,LED 200ms
-  void task2(void* pvParameters)
-  {
-    while(1)
-    {
-      LED1_TOGGLE();
-      vTaskDelay(200);
-    }
-  }
-
-  //线程三,判断KEY0按下删除task1
-  void task3(void* pvParameters)
-  {
-    uint8_t key=0;
-    while(1)
-    {
-      key=key_scan(0);
-      if(key==KEY0_PRES && task_handler != NULL)
-      {
-        vTaskDelete(task1_handler);
-      }
-      vTaskDelay(10);
-    }
-  }
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -161,17 +177,18 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   void (*start_tasks[])(void *) = {task1, task2, task3}; // 任务函数数组
-  osThreadAttr_t *task_attributes[] = {&task1_attributes, &task2_attributes, &task3_attributes}; // 任务属性数组
+  const osThreadAttr_t *task_attributes[] = {&task1_attributes, &task2_attributes, &task3_attributes}; // 任务属�?�数�??
   osThreadId_t *task_handles[] = {&task1Handle, &task2Handle, &task3Handle}; // 任务句柄数组
   for (size_t i = 0; i < sizeof(start_tasks) / sizeof(start_tasks[0]); i++)
   {
-       *task_handles[i] = osThreadNew(start_tasks[i], NULL, task_attributes[i]); // 创建3个任务线程
+       *task_handles[i] = osThreadNew(start_tasks[i], NULL, task_attributes[i]); // 创建3个任务线�??
   }
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
   /* add events, ... */
   /* USER CODE END RTOS_EVENTS */
+
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -195,3 +212,4 @@ void StartDefaultTask(void *argument)
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
 /* USER CODE END Application */
+

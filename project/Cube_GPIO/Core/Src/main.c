@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "freertos.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
