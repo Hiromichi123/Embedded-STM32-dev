@@ -32,4 +32,17 @@ cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c.h
 cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+cube_gpio\main.o: ../Core/Inc/FreeRTOSConfig.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 cube_gpio\main.o: ../Core/Inc/gpio.h

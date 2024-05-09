@@ -8,11 +8,16 @@
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\CMSIS\\Include",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Middlewares\\Third_Party\\FreeRTOS\\Source\\include",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Middlewares\\Third_Party\\FreeRTOS\\Source\\CMSIS_RTOS_V2",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\RVDS\\ARM_CM4F",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\MDK-ARM",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Core\\Src",
-                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Src"
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Drivers\\STM32H7xx_HAL_Driver\\Src",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Middlewares\\Third_Party\\FreeRTOS\\Source",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\project\\Cube_GPIO\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
