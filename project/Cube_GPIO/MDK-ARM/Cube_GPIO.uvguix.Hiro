@@ -1815,9 +1815,9 @@
       <ActiveTab>1</ActiveTab>
       <Doc>
         <Name>../Core/Src/main.c</Name>
-        <ColumnNumber>29</ColumnNumber>
+        <ColumnNumber>4</ColumnNumber>
         <TopLine>95</TopLine>
-        <CurrentLine>111</CurrentLine>
+        <CurrentLine>113</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
@@ -1825,7 +1825,7 @@
       <Doc>
         <Name>../Core/Src/freertos.c</Name>
         <ColumnNumber>35</ColumnNumber>
-        <TopLine>91</TopLine>
+        <TopLine>55</TopLine>
         <CurrentLine>148</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
