@@ -3,15 +3,6 @@
 
 #include "usart.h"
 
-/**********************************************************
-***	Emm_V5.0步进闭环控制例程
-***	编写作者：ZHANGDATOU
-***	技术支持：张大头闭环伺服
-***	淘宝店铺：https://zhangdatou.taobao.com
-***	CSDN博客：http s://blog.csdn.net/zhangdatou666
-***	qq交流群：262438510
-**********************************************************/
-
 #define		ABS(x)		((x) > 0 ? (x) : -(x)) 
 
 typedef enum {
@@ -31,10 +22,6 @@ typedef enum {
 	S_ORG   = 16,     /* 读取正在回零/回零失败状态标志位 */
 }SysParams_t;
 
-
-/**********************************************************
-*** 注意：每个函数的参数的具体说明，请查阅对应函数的注释说明
-**********************************************************/
 void Emm_V5_Reset_CurPos_To_Zero(uint8_t addr); // 将当前位置清零
 void Emm_V5_Reset_Clog_Pro(uint8_t addr); // 解除堵转保护
 void Emm_V5_Read_Sys_Params(uint8_t addr, SysParams_t s); // 读取参数

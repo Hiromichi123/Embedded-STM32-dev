@@ -33,3 +33,5 @@ cube_gpio\stm32h7xx_hal_i2c.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal
 cube_gpio\stm32h7xx_hal_i2c.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 cube_gpio\stm32h7xx_hal_i2c.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
 cube_gpio\stm32h7xx_hal_i2c.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+cube_gpio\stm32h7xx_hal_i2c.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
+cube_gpio\stm32h7xx_hal_i2c.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h

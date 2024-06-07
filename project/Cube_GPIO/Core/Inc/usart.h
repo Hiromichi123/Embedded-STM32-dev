@@ -29,19 +29,24 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "stm32h7xx.h"
+#include "stm32h7xx_hal.h"
+#include "fifo.h"
 /* USER CODE END Includes */
 
-extern UART_HandleTypeDef huart4;
+extern UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN Private defines */
-
+extern __IO bool rxFrameFlag;
+extern __IO uint8_t rxCmd[FIFO_SIZE];
+extern __IO uint8_t rxCount;
 /* USER CODE END Private defines */
 
-void MX_UART4_Init(void);
+void MX_USART1_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+void usart_SendCmd(uint8_t *cmd, uint8_t len);
+void usart_SendByte(uint8_t data);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

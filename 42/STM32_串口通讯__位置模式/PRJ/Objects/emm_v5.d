@@ -4,10 +4,10 @@
 .\objects\emm_v5.o: ..\BSP\board.h
 .\objects\emm_v5.o: ..\CMSIS\stm32f10x.h
 .\objects\emm_v5.o: ..\CMSIS\core_cm3.h
-.\objects\emm_v5.o: D:\ApplicationProgram\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\emm_v5.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\emm_v5.o: ..\CMSIS\system_stm32f10x.h
 .\objects\emm_v5.o: ..\APP\stm32f10x_conf.h
-.\objects\emm_v5.o: D:\ApplicationProgram\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\emm_v5.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\emm_v5.o: ..\LIB\STM32F10x_StdPeriph_Lib_V3.5.0\inc\stm32f10x_gpio.h
 .\objects\emm_v5.o: ..\CMSIS\stm32f10x.h
 .\objects\emm_v5.o: ..\LIB\STM32F10x_StdPeriph_Lib_V3.5.0\inc\stm32f10x_rcc.h

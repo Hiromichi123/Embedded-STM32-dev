@@ -22,6 +22,9 @@
 #include "stm32h7xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stm32h7xx_hal.h"
+#include "stm32h7xx_hal_uart.h"
+#include "fifo.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,7 +34,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+extern bool rxFrameFlag;
+extern uint8_t rxCmd[FIFO_SIZE];
+extern uint8_t rxCount;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -55,6 +60,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern UART_HandleTypeDef huart1;
 extern TIM_HandleTypeDef htim1;
 
 /* USER CODE BEGIN EV */
@@ -171,6 +177,34 @@ void TIM1_UP_IRQHandler(void)
   /* USER CODE BEGIN TIM1_UP_IRQn 1 */
 
   /* USER CODE END TIM1_UP_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART1 global interrupt.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+
+  /* USER CODE END USART1_IRQn 0 */
+  HAL_UART_IRQHandler(&huart1);
+  /* USER CODE BEGIN USART1_IRQn 1 */
+    if (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_RXNE) != RESET) {
+        uint8_t data;
+        HAL_UART_Receive(&huart1, &data, 1, HAL_MAX_DELAY);
+        fifo_enQueue(data);
+        __HAL_UART_CLEAR_IT(&huart1, UART_IT_RXNE);
+    }
+
+    if (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_IDLE) != RESET) {
+        __HAL_UART_CLEAR_IT(&huart1, UART_IT_IDLE);
+        uint16_t rxCount = fifo_queueLength();
+        for (uint16_t i = 0; i < rxCount; i++) {
+            rxCmd[i] = fifo_deQueue();
+        }
+        rxFrameFlag = true;
+    }
+  /* USER CODE END USART1_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

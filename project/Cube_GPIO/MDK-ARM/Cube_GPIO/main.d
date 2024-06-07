@@ -34,6 +34,8 @@ cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
 cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
+cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
+cube_gpio\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 cube_gpio\main.o: ../Core/Inc/FreeRTOSConfig.h
@@ -45,4 +47,9 @@ cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrapper
 cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 cube_gpio\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+cube_gpio\main.o: ../Core/Inc/usart.h
+cube_gpio\main.o: ../Core/Inc/fifo.h
+cube_gpio\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 cube_gpio\main.o: ../Core/Inc/gpio.h
+cube_gpio\main.o: ../Core/Inc/delay.h
+cube_gpio\main.o: ../Core/Inc/Emm_V5.h

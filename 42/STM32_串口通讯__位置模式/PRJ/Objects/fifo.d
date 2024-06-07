@@ -2,10 +2,10 @@
 .\objects\fifo.o: ..\DRIVERS\fifo.h
 .\objects\fifo.o: ..\CMSIS\stm32f10x.h
 .\objects\fifo.o: ..\CMSIS\core_cm3.h
-.\objects\fifo.o: D:\ApplicationProgram\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\fifo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\fifo.o: ..\CMSIS\system_stm32f10x.h
 .\objects\fifo.o: ..\APP\stm32f10x_conf.h
-.\objects\fifo.o: D:\ApplicationProgram\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\fifo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\fifo.o: ..\LIB\STM32F10x_StdPeriph_Lib_V3.5.0\inc\stm32f10x_gpio.h
 .\objects\fifo.o: ..\CMSIS\stm32f10x.h
 .\objects\fifo.o: ..\LIB\STM32F10x_StdPeriph_Lib_V3.5.0\inc\stm32f10x_rcc.h
