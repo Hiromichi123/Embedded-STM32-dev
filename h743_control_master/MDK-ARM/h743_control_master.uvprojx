@@ -10,11 +10,10 @@
       <TargetName>h743_control_master</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060528::V5.06 update 5 (build 528)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>STM32H743VITx</Device>
+          <Device>STM32H743IITx</Device>
           <Vendor>STMicroelectronics</Vendor>
           <PackID>Keil.STM32H7xx_DFP.3.0.0</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
@@ -33,7 +32,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:STM32H743VITx$CMSIS\SVD\STM32H743.svd</SFDFile>
+          <SFDFile>$$Device:STM32H743IITx$CMSIS\SVD\STM32H743.svd</SFDFile>
           <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -336,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Inc;C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/CMSIS/Device/ST/STM32H7xx/Include;C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -378,7 +377,7 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Application/MDK-ARM</GroupName>
+          <GroupName>MDK-ARM</GroupName>
           <Files>
             <File>
               <FileName>startup_stm32h743xx.s</FileName>
@@ -388,32 +387,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>New Group</GroupName>
-          <Files>
-            <File>
-              <FileName>Emm_V5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\工创国赛\master_control_h7b0\User\Emm_V5.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\工创国赛\full_vl53l0x_f401\User\uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>user.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\工创国赛\full_vl53l0x_f401\User\user.c</FilePath>
-            </File>
-            <File>
-              <FileName>user.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\工创国赛\full_vl53l0x_f401\User\user.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Application/User/Core</GroupName>
+          <GroupName>Core</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
@@ -438,102 +412,102 @@
             <File>
               <FileName>stm32h7xx_hal_cortex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_tim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_tim_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_uart_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_rcc_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_flash_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_hsem.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_dma_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_mdma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_pwr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_pwr_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_i2c_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c</FilePath>
             </File>
             <File>
               <FileName>stm32h7xx_hal_exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:/Users/Hiro/STM32Cube/Repository/STM32Cube_FW_H7_V1.11.2/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c</FilePath>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c</FilePath>
             </File>
           </Files>
         </Group>
