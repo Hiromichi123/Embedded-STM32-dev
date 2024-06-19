@@ -404,6 +404,21 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32h7xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>main.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\main.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\stm32h7xx_hal_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_it.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Core\Inc\stm32h7xx_it.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -518,6 +533,56 @@
               <FileName>system_stm32h7xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/system_stm32h7xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>emm42.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\emm42\emm42.c</FilePath>
+            </File>
+            <File>
+              <FileName>emm42_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\emm42\emm42_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>emm42_read.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\emm42\emm42_read.c</FilePath>
+            </File>
+            <File>
+              <FileName>emm42.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\emm42\emm42.h</FilePath>
+            </File>
+            <File>
+              <FileName>Emm_V5.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\Emm_V5.h</FilePath>
+            </File>
+            <File>
+              <FileName>user.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\user.h</FilePath>
+            </File>
+            <File>
+              <FileName>Emm_V5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Emm_V5.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>user.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\user.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -36,7 +36,9 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+UART_HandleTypeDef huart4;
+UART_HandleTypeDef huart5;
+UART_HandleTypeDef huart7;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -53,7 +55,12 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void SystemClock_Config(void);
+static void MPU_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_UART4_Init(void);
+static void MX_UART5_Init(void);
+static void MX_UART7_Init(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
