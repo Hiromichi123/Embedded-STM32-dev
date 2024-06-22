@@ -37,16 +37,9 @@ int emm42ReadPosition(emm42_motor motor, int32_t* dataOfPosition){
     emmMotorSend(motor, readCommand);
     UChar dataBack[6];
     int dataBackLength=6;
-#ifdef TM4
-    UChar *p=dataBack;
-    for (int i=0; i<dataBackLength; i++){
-        *p = UARTCharGet(*motor.uart);
-        p++;
-    }
-#endif // TM4
-#ifdef STM32
+
     HAL_UART_Receive(motor.uart, (uint8_t *)dataBack, dataBackLength, HAL_MAX_DELAY);
-#endif // STM32
+
     if(dataBack[0] == motor.address && dataBack[5] == motor.checkByte){
         *dataOfPosition = (dataBack[1] << 24) | (dataBack[2] << 16) | (dataBack[3] << 8) | dataBack[4];
         return SUCCESS;

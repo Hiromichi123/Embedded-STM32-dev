@@ -8,13 +8,13 @@
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\Drivers\\STM32H7xx_HAL_Driver\\Inc\\Legacy",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\Drivers\\CMSIS\\Device\\ST\\STM32H7xx\\Include",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\Drivers\\CMSIS\\Include",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\User",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include",
                 "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\MDK-ARM",
-                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\Core\\Src",
                 "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\Drivers\\STM32H7xx_HAL_Driver\\Src",
-                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\User\\emm42",
-                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\User"
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\Core\\Src",
+                "c:\\Users\\Hiro\\Desktop\\Embedded-STM32-dev\\h743_control_master\\User\\emm42"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

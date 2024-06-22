@@ -3,7 +3,7 @@
 
 #include "stdbool.h"
 #include "stdint.h"
-#include "usart.h"
+#include "main.h"
 
 typedef unsigned char UChar;
 #define FORWARD 1

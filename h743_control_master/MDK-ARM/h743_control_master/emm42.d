@@ -1,4 +1,7 @@
 h743_control_master\emm42.o: ..\User\emm42\emm42.c
+h743_control_master\emm42.o: ..\User\emm42\emm42.h
+h743_control_master\emm42.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+h743_control_master\emm42.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 h743_control_master\emm42.o: ../Core/Inc/main.h
 h743_control_master\emm42.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h
 h743_control_master\emm42.o: ../Core/Inc/stm32h7xx_hal_conf.h
@@ -7,7 +10,6 @@ h743_control_master\emm42.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_d
 h743_control_master\emm42.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
 h743_control_master\emm42.o: ../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h
 h743_control_master\emm42.o: ../Drivers/CMSIS/Include/core_cm7.h
-h743_control_master\emm42.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 h743_control_master\emm42.o: ../Drivers/CMSIS/Include/cmsis_version.h
 h743_control_master\emm42.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 h743_control_master\emm42.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -34,5 +36,3 @@ h743_control_master\emm42.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_p
 h743_control_master\emm42.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 h743_control_master\emm42.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 h743_control_master\emm42.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
-h743_control_master\emm42.o: ..\User\emm42\emm42.h
-h743_control_master\emm42.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

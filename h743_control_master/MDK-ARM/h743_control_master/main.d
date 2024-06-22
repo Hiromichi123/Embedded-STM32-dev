@@ -34,3 +34,7 @@ h743_control_master\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pw
 h743_control_master\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 h743_control_master\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 h743_control_master\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+h743_control_master\main.o: ../User/user.h
+h743_control_master\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+h743_control_master\main.o: ../User/emm42/emm42.h
+h743_control_master\main.o: ../User/Emm_V5.h

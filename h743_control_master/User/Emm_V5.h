@@ -1,7 +1,7 @@
 #ifndef __EMM_V5_H
 #define __EMM_V5_H
 
-#include "usart.h"
+#include "main.h"
 #include "stdbool.h"
 #include "stm32h7xx_hal.h"
 
