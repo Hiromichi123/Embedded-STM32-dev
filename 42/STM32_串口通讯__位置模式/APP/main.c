@@ -5,19 +5,19 @@
 
 int main(void)
 {
-  //³õÊ¼»¯°åÔØÍâÉè
-	board_init();
+  //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	board_	init();
 
-	//ÉÏµçÑÓÊ±2ÃëµÈ´ýEmm_V5.0±Õ»·³õÊ¼»¯Íê±Ï
+	//ï¿½Ïµï¿½ï¿½ï¿½Ê±2ï¿½ï¿½È´ï¿½Emm_V5.0ï¿½Õ»ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½
 	delay_ms(2000);
 
-	//Î»ÖÃÄ£Ê½£º·½ÏòCW£¬ËÙ¶È1000RPM£¬¼ÓËÙ¶È0£¨²»Ê¹ÓÃ¼Ó¼õËÙÖ±½ÓÆô¶¯£©£¬Âö³åÊý3200£¨16Ï¸·ÖÏÂ·¢ËÍ3200¸öÂö³åµç»ú×ªÒ»È¦£©£¬Ïà¶ÔÔË¶¯
+	//Î»ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½CWï¿½ï¿½ï¿½Ù¶ï¿½1000RPMï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½0ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¼Ó¼ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3200ï¿½ï¿½16Ï¸ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½3200ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªÒ»È¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½
   Emm_V5_Pos_Control(1, 0, 1000, 0, 3200, 0, 0);
 	
-	//µÈ´ý·µ»ØÃüÁî£¬ÃüÁîÊý¾Ý»º´æÔÚÊý×érxCmdÉÏ£¬³¤¶ÈÎªrxCount
+	//ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½rxCmdï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ÎªrxCount
 	while(rxFrameFlag == false); rxFrameFlag = false;
 
-	//WHILEÑ­»·
+	//WHILEÑ­ï¿½ï¿½
 	while(1)
 	{
 	}

@@ -1,6 +1,0 @@
---c99 -c --cpu Cortex-M7.fp.dp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../User
--I.\RTE\_h743_control_master
--IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
--IC:\Keil_v5\ARM\PACK\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
--D__UVISION_VERSION="524" -D_RTE_ -DSTM32H743xx -DUSE_HAL_DRIVER -DSTM32H743xx
--o h743_control_master\user.o --omf_browse h743_control_master\user.crf --depend h743_control_master\user.d "..\User\user.c"
