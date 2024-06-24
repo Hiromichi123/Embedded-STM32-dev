@@ -13,10 +13,10 @@ void setup() {
 }
 
 void loop() {
-		Emm_V5_Pos_Control(&uartHorizon, 1, 0, 1000, 100, 1000, false, false);
-	  HAL_Delay(1000);
-	  Emm_V5_Pos_Control(&uartHorizon, 1, 1, 1000, 100, 1000, false, false);
-	  HAL_Delay(1000);
+	Emm_V5_Pos_Control(&uartHorizon, 1, 0, 1000, 100, 1000, false, false);
+	HAL_Delay(1000);
+	Emm_V5_Pos_Control(&uartHorizon, 1, 1, 1000, 100, 1000, false, false);
+	HAL_Delay(1000);
 	
     Emm_V5_Pos_Control(&uartVertical, 2, 0, 1000, 100, 1000, false, false);
 	  //HAL_Delay(1000);
