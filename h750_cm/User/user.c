@@ -1,34 +1,49 @@
 #include "user.h"
 
 void setup() {
-    // 水平电机回零
-    //Emm_V5_Origin_Trigger_Return(&uartHorizon, 1, 2, false);
-    //HAL_Delay(10);
-    // 升降电机回零
-	  //Emm_V5_Origin_Trigger_Return(&uartVertical, 2, 2, false);
-    //HAL_Delay(10);
-    // 传送带电机回零
-    //Emm_V5_Origin_Trigger_Return(&uartRollbar, 3, 2, false);
-    //HAL_Delay(10);
+	  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
+	  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
+	  HAL_Delay(3000);
 }
 
 void loop() {
-		Emm_V5_Pos_Control(&uartHorizon, 1, 0, 1000, 150, 1200, false, false);
+	  //抬升4000
+    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 200, 4000, false, false);
+	  HAL_Delay(10);
+	  Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 200, 4000, false, false);
+	  HAL_Delay(4000);
+	
+	  //下降2000
+	  Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, 2000, false, false);
+	  HAL_Delay(10);
+	  Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, 2000, false, false);
+	  HAL_Delay(2000);
+	
+		//包装
+	  __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2,2000); //左右舵机转到180
+	  HAL_Delay(2000);
+	  __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2,500); //左右舵机转到0
+	  HAL_Delay(1000);
+	  __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1,2000); //前后舵机转到180
+	  HAL_Delay(2000);
+	
+	  //下降1000
+		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, 1000, false, false);
+	  HAL_Delay(10);
+	  Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, 1000, false, false);
+	  HAL_Delay(500);
+		__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1,500); //前后舵机转到0
+	  HAL_Delay(500);
+    
+		//左右来回800
+		Emm_V5_Pos_Control(&uartHorizon, 1, 0, 800, 200, 800, false, false);
 	  HAL_Delay(3000);
-	  Emm_V5_Pos_Control(&uartHorizon, 1, 1, 1000, 150, 1200, false, false);
-	
-    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 1000, 200, 5000, false, false);
+	  Emm_V5_Pos_Control(&uartHorizon, 1, 1, 800, 200, 800, false, false);
+		HAL_Delay(3000);
+		
+		//下降1000
+		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, 1000, false, false);
 	  HAL_Delay(10);
-	  Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 1000, 200, 5000, false, false);
-	  HAL_Delay(2000);
-	
-	  Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 1000, 200, 5000, false, false);
-	  HAL_Delay(10);
-	  Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 1000, 200, 5000, false, false);
-	  HAL_Delay(2000);
-	
-    //Emm_V5_Pos_Control(&uartRollbar, 3, 0, 1000, 100, 1000, false, false);
-	  //HAL_Delay(1000);
-	  //Emm_V5_Pos_Control(&uartRollbar, 3, 0, 1000, 100, 1000, false, false);
-    //HAL_Delay(1000);
+	  Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, 1000, false, false);
+		HAL_Delay(2000);
 }

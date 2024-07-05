@@ -8,8 +8,6 @@
 "h750_cm\stm32h7xx_hal_cortex.o"
 "h750_cm\stm32h7xx_hal_tim.o"
 "h750_cm\stm32h7xx_hal_tim_ex.o"
-"h750_cm\stm32h7xx_hal_uart.o"
-"h750_cm\stm32h7xx_hal_uart_ex.o"
 "h750_cm\stm32h7xx_hal_rcc.o"
 "h750_cm\stm32h7xx_hal_rcc_ex.o"
 "h750_cm\stm32h7xx_hal_flash.o"
@@ -25,6 +23,8 @@
 "h750_cm\stm32h7xx_hal_i2c.o"
 "h750_cm\stm32h7xx_hal_i2c_ex.o"
 "h750_cm\stm32h7xx_hal_exti.o"
+"h750_cm\stm32h7xx_hal_uart.o"
+"h750_cm\stm32h7xx_hal_uart_ex.o"
 "h750_cm\system_stm32h7xx.o"
 --strict --scatter "h750_cm\h750_cm.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

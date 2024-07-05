@@ -31,5 +31,7 @@ h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_ha
 h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_i2c_ex.h
 h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
+h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim.h
+h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 h750_cm\stm32h7xx_hal_dma_ex.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h

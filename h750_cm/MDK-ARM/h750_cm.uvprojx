@@ -466,16 +466,6 @@
               <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c</FilePath>
             </File>
             <File>
-              <FileName>stm32h7xx_hal_uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32h7xx_hal_uart_ex.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32h7xx_hal_rcc.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c</FilePath>
@@ -549,6 +539,16 @@
               <FileName>stm32h7xx_hal_exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32h7xx_hal_uart_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c</FilePath>
             </File>
           </Files>
         </Group>
