@@ -2,6 +2,9 @@
 "h750_cm\startup_stm32h750xx.o"
 "h750_cm\emm_v5.o"
 "h750_cm\user.o"
+"h750_cm\pack.o"
+"h750_cm\belt.o"
+"h750_cm\robotarm.o"
 "h750_cm\main.o"
 "h750_cm\stm32h7xx_it.o"
 "h750_cm\stm32h7xx_hal_msp.o"
@@ -26,7 +29,7 @@
 "h750_cm\stm32h7xx_hal_uart.o"
 "h750_cm\stm32h7xx_hal_uart_ex.o"
 "h750_cm\system_stm32h7xx.o"
---strict --scatter "h750_cm\h750_cm.sct"
+--library_type=microlib --strict --scatter "h750_cm\h750_cm.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "h750_cm.map" -o h750_cm\h750_cm.axf

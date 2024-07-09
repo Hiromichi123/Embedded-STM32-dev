@@ -39,3 +39,8 @@ h750_cm\user.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h
 h750_cm\user.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 h750_cm\user.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
 h750_cm\user.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+h750_cm\user.o: ..\User\pack.h
+h750_cm\user.o: ..\User\robotarm.h
+h750_cm\user.o: ..\User\belt.h
+h750_cm\user.o: ../Core/Inc/stm32h7xx_it.h
+h750_cm\user.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

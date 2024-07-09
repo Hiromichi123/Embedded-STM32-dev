@@ -39,6 +39,7 @@ extern "C" {
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim3;
+extern TIM_HandleTypeDef htim4;
 	
 extern UART_HandleTypeDef huart4;
 extern UART_HandleTypeDef huart5;
@@ -62,9 +63,16 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define key2_Pin GPIO_PIN_10
+#define key2_GPIO_Port GPIOD
+#define key_Pin GPIO_PIN_11
+#define key_GPIO_Port GPIOD
+#define key_EXTI_IRQn EXTI15_10_IRQn
 
 /* USER CODE BEGIN Private defines */
 

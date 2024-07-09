@@ -187,7 +187,7 @@
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>0</useUlib>
+            <useUlib>1</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -409,6 +409,36 @@
               <FileName>user.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\user.h</FilePath>
+            </File>
+            <File>
+              <FileName>pack.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\pack.c</FilePath>
+            </File>
+            <File>
+              <FileName>pack.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\pack.h</FilePath>
+            </File>
+            <File>
+              <FileName>belt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\belt.c</FilePath>
+            </File>
+            <File>
+              <FileName>belt.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\belt.h</FilePath>
+            </File>
+            <File>
+              <FileName>robotarm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\robotarm.c</FilePath>
+            </File>
+            <File>
+              <FileName>robotarm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\robotarm.h</FilePath>
             </File>
           </Files>
         </Group>
