@@ -8,5 +8,5 @@ void belt_start()
 
 void belt_stop()
 {
-	__HAL_TIM_SetCompare(&htim4, TIM_CHANNEL_1,0); //ֹͣ
+	__HAL_TIM_SetCompare(&htim4, TIM_CHANNEL_1,0); //ֹͣ��
 }
