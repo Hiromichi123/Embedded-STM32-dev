@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
 
 ==============================================================================
 
@@ -2011,7 +2011,7 @@ Image Symbol Table
     i.HAL_UART_Transmit                      0x08002ad4   Section        0  stm32h7xx_hal_uart.o(i.HAL_UART_Transmit)
     i.HardFault_Handler                      0x08002b84   Section        0  stm32h7xx_it.o(i.HardFault_Handler)
     i.MX_GPIO_Init                           0x08002b88   Section        0  main.o(i.MX_GPIO_Init)
-    MX_GPIO_Init                             0x08002b89   Thumb Code   220  main.o(i.MX_GPIO_Init)
+    MX_GPIO_Init                             0x08002b89   Thumb Code   218  main.o(i.MX_GPIO_Init)
     i.MX_TIM1_Init                           0x08002c70   Section        0  main.o(i.MX_TIM1_Init)
     MX_TIM1_Init                             0x08002c71   Thumb Code   234  main.o(i.MX_TIM1_Init)
     i.MX_TIM2_Init                           0x08002d64   Section        0  main.o(i.MX_TIM2_Init)
@@ -2602,28 +2602,28 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-        16          4          0          0          0        433   belt.o
-       124          0          0          0          0    1297888   emm_v5.o
-      1764        110          0          0        896       9606   main.o
-        36          8        664          0       1024        836   startup_stm32h750xx.o
-       232         44          0         12          0      23316   stm32h7xx_hal.o
-       354         28          0          0          0      41753   stm32h7xx_hal_cortex.o
-       608         50          0          0          0       4025   stm32h7xx_hal_gpio.o
-       828         92          0          0          0       3770   stm32h7xx_hal_msp.o
-        84          6          0          0          0        789   stm32h7xx_hal_pwr_ex.o
-      2466        102          0          0          0       7052   stm32h7xx_hal_rcc.o
-      3736        118          0          0          0       7773   stm32h7xx_hal_rcc_ex.o
-      2386        240          0          0          0      16882   stm32h7xx_hal_tim.o
-       324         40          0          0          0       2376   stm32h7xx_hal_tim_ex.o
-      2056        112         24          0          0      28085   stm32h7xx_hal_uart.o
-       284          6         16          0          0       3705   stm32h7xx_hal_uart_ex.o
-        52          6          0          4          0       4937   stm32h7xx_it.o
-       220         40         16          8          0       1374   system_stm32h7xx.o
-       192         86          0         12          0       1194   tune.o
-       232         50          0          0          0       1816   user.o
+        16          4          0          0          0        445   belt.o
+       124          0          0          0          0    1298092   emm_v5.o
+      1764        112          0          0        896       9786   main.o
+        36          8        664          0       1024        848   startup_stm32h750xx.o
+       232         44          0         12          0      23424   stm32h7xx_hal.o
+       354         28          0          0          0      41877   stm32h7xx_hal_cortex.o
+       608         50          0          0          0       4097   stm32h7xx_hal_gpio.o
+       828         92          0          0          0       3830   stm32h7xx_hal_msp.o
+        84          6          0          0          0        801   stm32h7xx_hal_pwr_ex.o
+      2466        102          0          0          0       7136   stm32h7xx_hal_rcc.o
+      3736        118          0          0          0       7857   stm32h7xx_hal_rcc_ex.o
+      2386        240          0          0          0      17146   stm32h7xx_hal_tim.o
+       324         40          0          0          0       2412   stm32h7xx_hal_tim_ex.o
+      2056        112         24          0          0      28217   stm32h7xx_hal_uart.o
+       284          6         16          0          0       3765   stm32h7xx_hal_uart_ex.o
+        52          6          0          4          0       5069   stm32h7xx_it.o
+       220         40         16          8          0       1414   system_stm32h7xx.o
+       192         86          0         12          0       1230   tune.o
+       232         50          0          0          0       1832   user.o
 
     ----------------------------------------------------------------------
-     16018       1142        752         36       1920    1457610   Object Totals
+     16018       1144        752         36       1920    1459278   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         24          0          0          0          0          0   (incl. Padding)
 
@@ -2669,9 +2669,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     16716       1172        752         40       1920    1449222   Grand Totals
-     16716       1172        752         40       1920    1449222   ELF Image Totals
-     16716       1172        752         40          0          0   ROM Totals
+     16716       1174        752         40       1920    1450890   Grand Totals
+     16716       1174        752         40       1920    1450890   ELF Image Totals
+     16716       1174        752         40          0          0   ROM Totals
 
 ==============================================================================
 
