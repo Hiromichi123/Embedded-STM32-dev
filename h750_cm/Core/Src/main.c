@@ -134,8 +134,7 @@ int main(void)
   MX_UART8_Init();
   /* USER CODE BEGIN 2 */
 	setup();
-  TIM1->CCR1 = 300;
-  HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,GPIO_PIN_SET);
+	back();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -145,8 +144,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		//loop();
-    tune();
+		loop();
   }
   /* USER CODE END 3 */
 }

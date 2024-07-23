@@ -5,7 +5,6 @@
 "h750_cm\pack.o"
 "h750_cm\belt.o"
 "h750_cm\robotarm.o"
-"h750_cm\tune.o"
 "h750_cm\main.o"
 "h750_cm\stm32h7xx_it.o"
 "h750_cm\stm32h7xx_hal_msp.o"

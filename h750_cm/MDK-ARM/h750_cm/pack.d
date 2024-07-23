@@ -44,3 +44,4 @@ h750_cm\pack.o: ..\User\pack.h
 h750_cm\pack.o: ..\User\robotarm.h
 h750_cm\pack.o: ..\User\belt.h
 h750_cm\pack.o: ../Core/Inc/stm32h7xx_it.h
+h750_cm\pack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
