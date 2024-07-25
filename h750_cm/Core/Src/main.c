@@ -137,6 +137,7 @@ int main(void)
   MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
 	setup();
+	
 	//rm_abandon();
 	
   /* USER CODE END 2 */

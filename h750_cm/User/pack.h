@@ -12,3 +12,4 @@
 #define SNAPAMO 5000
 
 void pack(void);
+void stick(void);

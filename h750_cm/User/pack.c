@@ -4,12 +4,12 @@
 void stick()
 {
 	__HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1500); //�뿪צ
-	Emm_V5_Pos_Control(&uartHorizon, 1, 1, 50, 50, 300, false, false); //ˮƽ���ǰ��
+	Emm_V5_Pos_Control(&uartHorizon, 1, 1, 50, 50, 14000, false, false); //ˮƽ���ǰ��
 	HAL_Delay(2000);
 	
     __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 500); //��צ
 	HAL_Delay(1000);
-	Emm_V5_Pos_Control(&uartHorizon, 1, 0, 50, 50, 300, false, false); //ˮƽ�������
+	Emm_V5_Pos_Control(&uartHorizon, 1, 0, 50, 50, 14000, false, false); //ˮƽ�������
 	
    //v
 
