@@ -134,17 +134,19 @@ int main(void)
   MX_UART8_Init();
   /* USER CODE BEGIN 2 */
 	setup();
-	back();
+	//rm_abandon();
+	
   /* USER CODE END 2 */
-
+	
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		loop();
+		//loop();
   }
   /* USER CODE END 3 */
 }
@@ -229,7 +231,7 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 12-1;
+  htim1.Init.Prescaler = 36-1;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim1.Init.Period = 600-1;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

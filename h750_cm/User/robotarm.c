@@ -108,23 +108,8 @@ void servo_move(double target,double *angle)
 	}
 }
 
-void rm_work()
-{
-	
-//	  double degree[]={60,60,60};
-//		double angle[]={angle2,angle3,angle4};
-//		
-//		for(int i=0; i<100; i++)
-//		{
-//			double *p1=&degree[0];
-//			double *p2=&angle[0];
-//			servo_move(*p1,p2);
-//			p1++; p2++;
-//		}
-
-		//机械臂初始化
-		Start_state();
-    //夹取箱子
+void rm_pack()
+{		Start_state();
 		servo_move(60,&angle2);
 		servo_move(60,&angle3);
 		servo_move(90,&angle6);
@@ -145,4 +130,18 @@ void rm_work()
 		servo_move(130,&angle2);
 		servo_move(86,&angle1);
 		servo_move(0,&angle6);
+}
+void rm_abandon()
+{
+	Start_state();
+	servo_move(50,&angle1);
+	servo_move(94,&angle2);
+	servo_move(120,&angle4);
+	servo_move(64,&angle2);
+	servo_move(60,&angle6);
+	servo_move(90,&angle2);
+	servo_move(90,&angle1);
+	servo_move(0,&angle4);
+	servo_move(0,&angle2);
+	
 }

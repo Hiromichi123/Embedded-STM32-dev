@@ -26,16 +26,16 @@ void setup() {
 	  //HAL_Delay(5000);
 	
 	  //抬升7000
-    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 1000, 200, PREAMO, false, false);
+    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 100, PREAMO, false, false);
 	  HAL_Delay(10);
-    Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 1000, 200, PREAMO, false, false);
+    Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 100, PREAMO, false, false);
 	  HAL_Delay(1000);
 		
 		//开启传送带
 		belt_start();
 	  HAL_Delay(2000);
 		
-		printf("init complete!");
+		//printf("init complete!");
 }
 
 void loop()
@@ -54,7 +54,7 @@ void loop()
 		{
 			printf("belt stop");
 		  belt_stop();
-	      rm_work();
+	      rm_pack();
 			process++;
 			printf("rm_work success!");
 			HAL_Delay(1000);

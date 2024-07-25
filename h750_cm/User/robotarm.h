@@ -19,5 +19,6 @@ void control_six(double angle);
 void Control_angle(void);
 void Start_state(void);
 void servo_move(double target,double *angle);
-void rm_work(void);
+void rm_pack(void);
+void rm_abandon(void);
 #endif

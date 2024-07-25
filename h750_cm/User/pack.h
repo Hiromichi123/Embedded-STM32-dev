@@ -2,13 +2,13 @@
 #include "main.h"
 
 #define uartVertical_1 huart4
-#define uartVertical_2 huart7
+#define uartVertical_2 huart8
 #define uartHorizon huart5
 
-#define PushTime 2500
-#define DOWNAMO 4000
-#define PACKAMO 1000
+#define PushTime 4500
+#define DOWNAMO 17000
+#define PACKAMO 5500
 #define TAPEAMO 800
-#define SNAPAMO 500
+#define SNAPAMO 5000
 
 void pack(void);

@@ -36,15 +36,16 @@ void pack()
 	
 	  //下降1000
 		
-		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, TAPEAMO, false, false);
-		HAL_Delay(10);
-		Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, TAPEAMO, false, false);
-	  	HAL_Delay(500);
-    
+//		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, TAPEAMO, false, false);
+//		HAL_Delay(10);
+//		Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, TAPEAMO, false, false);
+//	  	HAL_Delay(500);
+//    
 		//回800封箱
 		Emm_V5_Pos_Control(&uartHorizon, 1, 0, 800, 200, 800, false, false);
 	  HAL_Delay(3000);
-		
+		//前后推杆回零
+		back();
 		//下降500断胶带
 		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, SNAPAMO, false, false);
 	  HAL_Delay(10);
@@ -55,12 +56,11 @@ void pack()
 	  Emm_V5_Pos_Control(&uartHorizon, 1, 1, 800, 200, 800, false, false);
 		HAL_Delay(1000);
 		
-		//前后推杆回零
-		back();
+		
 		
 	  //整体回0
-    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 200, (PREAMO-DOWNAMO-TAPEAMO-SNAPAMO), false, false);
+    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 200, (DOWNAMO+SNAPAMO), false, false);
 	  HAL_Delay(10);
-	  Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 200,(PREAMO-DOWNAMO-TAPEAMO-SNAPAMO) , false, false);
+	  Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 200,(DOWNAMO+SNAPAMO) , false, false);
 	  HAL_Delay(5000);
 }
