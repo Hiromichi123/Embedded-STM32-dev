@@ -137,7 +137,8 @@ int main(void)
   MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
 	setup();
-	
+	// stick();
+   __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1000); //锟斤拷爪
 	//rm_abandon();
 	
   /* USER CODE END 2 */
