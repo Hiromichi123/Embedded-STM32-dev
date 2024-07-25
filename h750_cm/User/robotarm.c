@@ -134,14 +134,20 @@ void rm_pack()
 void rm_abandon()
 {
 	Start_state();
+	servo_move(80,&angle3);
 	servo_move(50,&angle1);
 	servo_move(94,&angle2);
 	servo_move(120,&angle4);
 	servo_move(64,&angle2);
 	servo_move(60,&angle6);
-	servo_move(90,&angle2);
+	//servo_move(50,&angle2);
 	servo_move(90,&angle1);
-	servo_move(0,&angle4);
-	servo_move(0,&angle2);
+//	
+//	servo_move(0,&angle3);
+//	servo_move(0,&angle2);
+	servo_move(180,&angle4);
+	servo_move(0,&angle6);
+	//Start_state();
+
 	
 }
