@@ -1,66 +1,79 @@
 #include "pack.h"
 #include "user.h"
 
+void stick()
+{
+	__HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1500); //ï¿½ë¿ª×¦
+	Emm_V5_Pos_Control(&uartHorizon, 1, 1, 50, 50, 300, false, false); //Ë®Æ½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½
+	HAL_Delay(2000);
+	
+    __HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 500); //ï¿½ï¿½×¦
+	HAL_Delay(1000);
+	Emm_V5_Pos_Control(&uartHorizon, 1, 0, 50, 50, 300, false, false); //Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	
+   //v
+
+	//ï¿½Â½ï¿½500ï¿½Ï½ï¿½ï¿½ï¿½
+	Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, SNAPAMO, false, false);
+	HAL_Delay(10);
+	Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, SNAPAMO, false, false);
+	HAL_Delay(1000);
+	
+	__HAL_TIM_SetCompare(&htim8, TIM_CHANNEL_1, 1500); //ï¿½ë¿ª×¦
+	
+	//ï¿½ï¿½ï¿½ï¿½
+	Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 500, 200, SNAPAMO, false, false);
+	HAL_Delay(10);
+	Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 500, 200, SNAPAMO, false, false);
+	HAL_Delay(1000);
+}
+
 void push()
 {	
-	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 300); //arr=600, Õ¼¿Õ±È50%
-	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,GPIO_PIN_SET); //Õý×ª
+	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 300); //arr=600, Õ¼ï¿½Õ±ï¿½50%
+	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,GPIO_PIN_SET); //ï¿½ï¿½×ª
 	HAL_Delay(PushTime);
-	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 0); //Õ¼¿Õ±È0
+	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 0); //Õ¼ï¿½Õ±ï¿½0
 }
 
 void back()
 {
-	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 300); //arr=600, Õ¼¿Õ±È50%
-	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,GPIO_PIN_RESET); //·´×ª
+	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 300); //arr=600, Õ¼ï¿½Õ±ï¿½50%
+	HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,GPIO_PIN_RESET); //ï¿½ï¿½×ª
 	HAL_Delay(PushTime);
-	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 0); //Õ¼¿Õ±È0
+	__HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1, 0); //Õ¼ï¿½Õ±ï¿½0
 }
 
 void pack()
 {
-		//Ì§Éý4000
+		//Ì§ï¿½ï¿½4000
 	  Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 800, 200, DOWNAMO, false, false);
 	  HAL_Delay(10);
 	  Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 800, 200, DOWNAMO, false, false);
 	  HAL_Delay(2000);
 
-		//°ü×°
+		//ï¿½ï¿½×°
 	  push();
-		//   __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2,2400); //×óÓÒ¶æ»úÇ°½ø180
-		//   HAL_Delay(2000);g
-		//   __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_2,600); //×óÓÒ¶æ»ú¹é0
-		//   HAL_Delay(200);
-		//   __HAL_TIM_SetCompare(&htim1, TIM_CHANNEL_1,2400); //Ç°ºó¶æ»úÇ°½ø180
-		//   HAL_Delay(2000);
 	
-	  //ÏÂ½µ1000
+	  //ï¿½Â½ï¿½1000
+		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, TAPEAMO, false, false);
+		HAL_Delay(10);
+		Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, TAPEAMO, false, false);
+	  HAL_Delay(500);
+    
+		//ï¿½â½º
+		stick();
 		
-//		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, TAPEAMO, false, false);
-//		HAL_Delay(10);
-//		Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, TAPEAMO, false, false);
-//	  	HAL_Delay(500);
-//    
-		//»Ø800·âÏä
-		Emm_V5_Pos_Control(&uartHorizon, 1, 0, 800, 200, 800, false, false);
-	  HAL_Delay(3000);
-		//Ç°ºóÍÆ¸Ë»ØÁã
-		back();
-		//ÏÂ½µ500¶Ï½º´ø
-		Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, SNAPAMO, false, false);
-	  HAL_Delay(10);
-	  Emm_V5_Pos_Control(&uartVertical_2, 1, 1, 500, 200, SNAPAMO, false, false);
-		HAL_Delay(1000);
-		
-		//Ë®Æ½µç»ú·´Ïò800»Ø0
+		//Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½800ï¿½ï¿½0
 	  Emm_V5_Pos_Control(&uartHorizon, 1, 1, 800, 200, 800, false, false);
 		HAL_Delay(1000);
 		
+		//Ç°ï¿½ï¿½ï¿½Æ¸Ë»ï¿½ï¿½ï¿½
+		back();
 		
-		
-	  //ÕûÌå»Ø0
-    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 200, (DOWNAMO+SNAPAMO), false, false);
+	  //ï¿½ï¿½ï¿½ï¿½ï¿½0
+    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 200, (PREAMO-DOWNAMO-TAPEAMO-SNAPAMO), false, false);
 	  HAL_Delay(10);
-	  Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 200,(DOWNAMO+SNAPAMO) , false, false);
+	  Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 200,(PREAMO-DOWNAMO-TAPEAMO-SNAPAMO) , false, false);
 	  HAL_Delay(5000);
 }
