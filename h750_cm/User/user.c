@@ -9,9 +9,6 @@ void setup() {
 	  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_1);
 	  HAL_GPIO_WritePin(GPIOE,GPIO_PIN_3,GPIO_PIN_SET);
 	
-	  //sg90通道初始化
-	  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_2);
-	
 	  //机械臂通道初始化
 	  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
 	  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_2);
@@ -20,15 +17,18 @@ void setup() {
 	  HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_1);
 	  HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);
 	  HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3);
-	
+
+	  //封箱舵机初始化
+	  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_4);
+	  HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_4);
 	
 	  //开机延时
 	  //HAL_Delay(5000);
 	
 	  //抬升7000
-    Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 100, PREAMO, false, false);
+      Emm_V5_Pos_Control(&uartVertical_1, 1, 1, 800, 100, PREAMO, false, false);
 	  HAL_Delay(10);
-    Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 100, PREAMO, false, false);
+      Emm_V5_Pos_Control(&uartVertical_2, 1, 0, 800, 100, PREAMO, false, false);
 	  HAL_Delay(1000);
 		
 		//开启传送带

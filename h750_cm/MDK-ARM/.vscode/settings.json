@@ -4,6 +4,7 @@
         "stm32h7xx_it.h": "c",
         "belt.h": "c",
         "emm_v5.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "pack.h": "c"
     }
 }

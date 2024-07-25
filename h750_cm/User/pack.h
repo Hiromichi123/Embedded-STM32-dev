@@ -13,3 +13,6 @@
 
 void pack(void);
 void stick(void);
+void tape_move(void);
+
+extern int start_tick;
