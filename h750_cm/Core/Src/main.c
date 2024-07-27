@@ -147,11 +147,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	   for(int i = 500;i<3000;i+=4)
-  {
-      TIM3->CCR4 = i;
-      HAL_Delay(1);
-  }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

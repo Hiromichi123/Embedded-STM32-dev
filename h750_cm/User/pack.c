@@ -2,17 +2,23 @@
 #include "user.h"
 
 int start_tick = 0;
+
 void stick()
 {
 	__HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_4, 1500); //ï¿½ë¿ª×¦
 	Emm_V5_Pos_Control(&uartHorizon, 1, 1, 50, 50, 14000, false, false); //Ë®Æ½ï¿½ï¿½ï¿½Ç°ï¿½ï¿?
 	HAL_Delay(2000);
 	
-    __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_4, 500); //ï¿½ï¿½×¦
+  __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_4, 500); //ï¿½ï¿½×¦
 	HAL_Delay(1000);
-	Emm_V5_Pos_Control(&uartHorizon, 1, 0, 50, 50, 14000, false, false); //Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 	
-   //v
+	//½º´øŽ†³ö»ú
+	for(int i = 500;i<3000;i+=4)
+  {
+      TIM3->CCR4 = i;
+      HAL_Delay(1);
+  }
+	Emm_V5_Pos_Control(&uartHorizon, 1, 0, 50, 50, 14000, false, false); //Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?
 
 	//ï¿½Â½ï¿½500ï¿½Ï½ï¿½ï¿½ï¿½
 	Emm_V5_Pos_Control(&uartVertical_1, 1, 0, 500, 200, SNAPAMO, false, false);
